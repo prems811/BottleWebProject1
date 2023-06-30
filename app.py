@@ -70,8 +70,8 @@ app.mount('/static', bottle.static_file(static_dir, root=static_dir))
 
 # Start the Bottle web server
 if __name__ == '__main__':
-    bottle.run(app, host='localhost', port=8080)   #Working
-    #bottle.run(app, host='localhost', port=443)
+    #bottle.run(app, host='localhost', port=8080)   #Working
+    bottle.run(app, host='0.0.0.0', port=8080,debug=False)
 
     #bottle.run(app, host='https://mydemochatbot.azurewebsites.net', port=80)
 
